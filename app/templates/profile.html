@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="cont">
+<div class = "top" >
+    <div id="photo">
+        <img id = "draven" src="{{url_for('static',filename='draven.jpg')}}" alt="profile pic">
+    </div>
+    <div class = "profile-basics">
+        <h1 id="name">Jamaal Henry</h1>
+        <div id="username">@JamaalHenry30</div>
+        <div id="location">Kingston,Jamaica</div>
+        <div id="date_join">{{date_joined}}</div>
+    </div>
+
+</div>
+<div class="bottom">
+    <div id="top">
+        <p id="bio">My name is Jamaal Henry. I am currently a junior student at the University of the West Indies currently pursuing a Bachelors in Computer Science. I enjoy playing basketball and video games.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="bot">
+        <div class="stats">
+            <div class="stat1">
+                <h3 id="postnum">300</h3><div id="posts">Posts</div>
+            </div>
+            <div class="stat2">
+                <h3 id="Followersnum">400</h3><div id="Followers">Followers</div>
+            </div>
+            <div class="stat3">
+                <h3 id="Followingnum">500</h3><div id="Following">Following</div>
+            </div>
+        </div>
+    <div id="button">
+        <button id="but">Follow</button>
+    </div>
+    </div>
+</div>
+</div>
+{% endblock %}
